@@ -1,3 +1,5 @@
+// --no-verify
+
 import React from 'react';
 
 function App() {
