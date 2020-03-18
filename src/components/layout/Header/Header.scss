@@ -1,1 +1,21 @@
 @import '../../../styles/settings.scss';
+
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  border-bottom: 1px solid $color-white;
+  &__Logo {
+    display: flex;
+    flex-direction: column;
+    margin: 0 2rem;
+    &-h3 {
+      text-transform: lowercase;
+    }
+    &-paragraph {
+      align-self: flex-end;
+      color: $color-font-contrast;
+    }
+  }
+}
