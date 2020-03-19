@@ -42,6 +42,10 @@ p {
   font-size: $font-normal;
 }
 
+strong {
+  letter-spacing: 1.2px;
+}
+
 /* buttons */
 button {
   border: none;
@@ -52,14 +56,22 @@ button {
   outline: none;
   font-size: $font-normal;
   cursor: pointer;
+  transition: box-shadow 0.6s cubic-bezier(0.17, 0.67, 0.83, 0.67);
 }
-button:hover {
-}
+
 .btn {
   &-span {
     color: $color-font-dark;
     font-weight: 600;
+    transition: all 0.8s;
   }
+}
+
+.btn:hover {
+  box-shadow: inset 0 5rem 0 0 $color-hover;
+}
+.btn:hover .btn-span {
+  color: $color-font-main;
 }
 
 /* helper classes */

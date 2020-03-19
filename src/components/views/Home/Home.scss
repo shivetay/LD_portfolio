@@ -12,10 +12,17 @@
   &__Section {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 99;
+    &-content {
+      align-self: flex-start;
+    }
+    // &-paragraph {
+    //   // margin-bottom: 8rem;
+    // }
   }
 }
