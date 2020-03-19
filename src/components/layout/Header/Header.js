@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 import './Header.scss';
 
-export default function Header() {
+const Header = () => {
   return (
     <div className='Header'>
       <div className='Header__Logo'>
@@ -29,4 +29,6 @@ export default function Header() {
       </div>
     </div>
   );
-}
+};
+
+export default Header;
