@@ -18,4 +18,15 @@
       color: $color-font-contrast;
     }
   }
+  &__Nav {
+    font-size: $font-normal;
+    margin-right: 2rem;
+    &-link {
+      margin: 0 3rem;
+      transition: all 0.3s;
+    }
+    &-link:hover {
+      color: $hover-link;
+    }
+  }
 }

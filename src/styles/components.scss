@@ -8,3 +8,20 @@ h3 {
 p {
   font-size: $font-normal;
 }
+
+.link,
+.link:active,
+.link:visited,
+.link:link {
+  text-decoration: none;
+  color: $color-font-main;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+/* helper classes */
+.active-link {
+  color: $active-link;
+}
