@@ -11,6 +11,11 @@
     a {
       width: 0;
       padding: 0.5rem 0;
+      transition: all 0.3s;
+    }
+
+    a:hover {
+      color: $hover-link;
     }
     &::after {
       content: '';
