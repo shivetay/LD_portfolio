@@ -13,12 +13,30 @@ p {
 .link:active,
 .link:visited,
 .link:link {
-  text-decoration: none;
-  color: $color-font-main;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 1px;
+}
+
+.link,
+.link:active,
+.link:visited,
+.link:link,
+a,
+a:active,
+a:visited,
+a:link {
+  text-decoration: none;
+  color: $color-font-main;
   cursor: pointer;
+}
+
+a,
+a:active,
+a:visited,
+a:link {
+  margin: 0;
+  font-size: $font-normal;
 }
 
 /* helper classes */

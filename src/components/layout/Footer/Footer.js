@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './Footer.scss';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faDiceFive } from '@fortawesome/free-solid-svg-icons';
@@ -28,7 +30,7 @@ const Footer = () => {
         </a>
       </div>
       <div className='Footer__Text'>
-        <span>Łukasz Dawidowicz</span>
+        <span>Łukasz Dawidowicz &copy;2020</span>
       </div>
     </footer>
   );
