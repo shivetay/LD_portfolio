@@ -1,0 +1,21 @@
+@import '../../../styles/settings.scss';
+
+.Home {
+  &__Header {
+    position: relative;
+    &-bg {
+      font-size: 55rem;
+      color: $color-font-contrast-second;
+      opacity: 0.15;
+    }
+  }
+  &__Section {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+  }
+}
