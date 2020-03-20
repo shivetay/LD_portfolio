@@ -11,10 +11,10 @@ class Home extends Component {
           <span className='Home__Header-bg '>hello</span>
           <section className='Home__Section'>
             <div className='Home__Section-content'>
-              <p className='Home__Section-paragraph'>
-                I am a <strong>Front-End Developer</strong>, and welcome to my
-                website.
-              </p>
+              <p className='Home__Section-paragraph'>My name is Łukasz</p>
+              <h2>
+                <strong>I am a Front-End Developer</strong>
+              </h2>
             </div>
             <div>
               <button className='btn'>
