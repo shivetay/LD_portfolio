@@ -95,8 +95,13 @@ button {
   display: grid;
   grid-template-rows: repeat(4, min-content);
   grid-template-columns:
-    [full-start] 1fr [center-start] repeat(8, minmax(min-content, 14rem))
+    [full-start] minmax(min-content, 1fr) [center-start] repeat(
+      8,
+      minmax(min-content, 14rem)
+    )
     [center-end] 1fr[full-end];
+  gap: 1rem;
+  align-items: center;
 }
 
 /* helper classes */
