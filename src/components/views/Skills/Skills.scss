@@ -17,6 +17,19 @@
     z-index: 99;
     &-front {
       grid-column: center-start / center-end;
+      grid-row: 1 / 1;
+    }
+    &-back {
+      grid-column: center-start / center-end;
+      grid-row: 2 / 2;
+    }
+    &-other {
+      grid-column: center-start / center-end;
+      grid-row: 3 / 3;
+    }
+    &-learn {
+      grid-column: center-start / center-end;
+      grid-row: 4 / 4;
     }
   }
 }
