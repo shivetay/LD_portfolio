@@ -18,6 +18,11 @@ class Home extends Component {
             </div>
             <div>
               <button className='btn'>
+                <Link to='/about'>
+                  <span className='btn-span'>about me</span>
+                </Link>
+              </button>
+              <button className='btn'>
                 <Link to='/projects'>
                   <span className='btn-span'>projects</span>
                 </Link>
@@ -25,11 +30,6 @@ class Home extends Component {
               <button className='btn'>
                 <Link to='/skills'>
                   <span className='btn-span'>skills</span>
-                </Link>
-              </button>
-              <button className='btn'>
-                <Link to='/about'>
-                  <span className='btn-span'>about me</span>
                 </Link>
               </button>
             </div>
