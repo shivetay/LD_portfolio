@@ -6,10 +6,10 @@ import './Home.scss';
 class Home extends Component {
   render() {
     return (
-      <div className='Home'>
+      <section className='Home'>
         <div className='Home__Header'>
-          <span className='Home__Header-bg '>hello</span>
-          <section className='Home__Section'>
+          <span className='Home__Header-bg'>hello</span>
+          <div className='Home__Section'>
             <div className='Home__Section-content'>
               <p className='Home__Section-paragraph'>My name is Łukasz</p>
               <h2>
@@ -33,9 +33,9 @@ class Home extends Component {
                 </Link>
               </button>
             </div>
-          </section>
+          </div>
         </div>
-      </div>
+      </section>
     );
   }
 }
