@@ -89,6 +89,17 @@ button {
   color: $hover-link;
 }
 
+/* Grid */
+
+.grid {
+  display: grid;
+  grid-template-rows: repeat(4, min-content);
+  grid-template-columns: [full-start] 1fr [center-start] repeat(
+      8,
+      minmax(min-content, 14rem)
+    ) [center-end] 1fr[full-end];
+}
+
 /* helper classes */
 .active-link {
   color: $active-link;
