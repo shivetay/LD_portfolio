@@ -16,7 +16,7 @@ class Home extends Component {
                 <strong>I am a Front-End Developer</strong>
               </h2>
             </div>
-            <div>
+            <div className='Home__Section-btn'>
               <button className='btn'>
                 <Link to='/about'>
                   <span className='btn-span'>about me</span>
