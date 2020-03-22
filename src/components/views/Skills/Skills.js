@@ -29,71 +29,71 @@ const Skills = () => {
           <div className='Skills__Content-front'>
             <h3>Front-End</h3>
           </div>
-          <div className='Skills__Content-icon1'>
-            <FontAwesomeIcon icon={faHtml5} />
+          <div className='Skills__Content-icon1 flex '>
+            <FontAwesomeIcon className='Skills-icon' icon={faHtml5} />
             <span className='Skills-span'>HTML</span>
           </div>
-          <div className='Skills__Content-icon2'>
-            <FontAwesomeIcon icon={faCss3} />
+          <div className='Skills__Content-icon2  flex'>
+            <FontAwesomeIcon className='Skills-icon' icon={faCss3} />
             <span className='Skills-span'>CSS</span>
           </div>
-          <div className='Skills__Content-icon3'>
-            <FontAwesomeIcon icon={faSass} />
+          <div className='Skills__Content-icon3  flex'>
+            <FontAwesomeIcon className='Skills-icon' icon={faSass} />
             <span className='Skills-span'>SASS</span>
           </div>
-          <div className='Skills__Content-icon4'>
-            <FontAwesomeIcon icon={faJsSquare} />
+          <div className='Skills__Content-icon4  flex'>
+            <FontAwesomeIcon className='Skills-icon' icon={faJsSquare} />
             <span className='Skills-span'>JavaScript</span>
           </div>
-          <div className='Skills__Content-icon5'>
-            <FontAwesomeIcon icon={faReact} />
+          <div className='Skills__Content-icon5  flex'>
+            <FontAwesomeIcon className='Skills-icon' icon={faReact} />
             <span className='Skills-span'>React + Redux</span>
           </div>
-          <div className='Skills__Content-icon6'>
-            <FontAwesomeIcon icon={faBootstrap} />
+          <div className='Skills__Content-icon6  flex'>
+            <FontAwesomeIcon className='Skills-icon' icon={faBootstrap} />
             <span className='Skills-span'>Bootstrap</span>
           </div>
 
           <div className='Skills__Content-back'>
             <h3>Back-End</h3>
           </div>
-          <div className='Skills__Content-icon7'>
-            <FontAwesomeIcon icon={faNodeJs} />
-            <span className='Skills-span'>Node.js - Express</span>
+          <div className='Skills__Content-icon7  flex'>
+            <FontAwesomeIcon className='Skills-icon' icon={faNodeJs} />
+            <span className='Skills-span'>Node.js + Express</span>
           </div>
-          <div className='Skills__Content-icon8'>
-            <FontAwesomeIcon icon={faDatabase} />
+          <div className='Skills__Content-icon8  flex'>
+            <FontAwesomeIcon className='Skills-icon' icon={faDatabase} />
             <span className='Skills-span'>MongoDB</span>
           </div>
           <div className='Skills__Content-other'>
             <h3>other</h3>
           </div>
-          <div className='Skills__Content-icon9'>
-            <FontAwesomeIcon icon={faNpm} />
+          <div className='Skills__Content-icon9  flex'>
+            <FontAwesomeIcon className='Skills-icon' icon={faNpm} />
             <span className='Skills-span'>NPM</span>
           </div>
-          <div className='Skills__Content-icon10'>
-            <FontAwesomeIcon icon={faYarn} />
+          <div className='Skills__Content-icon10  flex'>
+            <FontAwesomeIcon className='Skills-icon' icon={faYarn} />
             <span className='Skills-span'>Yarn</span>
           </div>
-          <div className='Skills__Content-icon11'>
-            <FontAwesomeIcon icon={faRunning} />
+          <div className='Skills__Content-icon11  flex'>
+            <FontAwesomeIcon className='Skills-icon' icon={faRunning} />
             <span className='Skills-span'>SCRUM</span>
           </div>
-          <div className='Skills__Content-icon12'>
-            <FontAwesomeIcon icon={faGithub} />
+          <div className='Skills__Content-icon12  flex'>
+            <FontAwesomeIcon className='Skills-icon' icon={faGithub} />
             <span className='Skills-span'>Git</span>
           </div>
-          <div className='Skills__Content-icon13'>
-            <FontAwesomeIcon icon={faJira} />
+          <div className='Skills__Content-icon13  flex'>
+            <FontAwesomeIcon className='Skills-icon' icon={faJira} />
             <span className='Skills-span'>Jira</span>
           </div>
-          <div className='Skills__Content-icon14'>
-            <FontAwesomeIcon icon={faConfluence} />
+          <div className='Skills__Content-icon14  flex'>
+            <FontAwesomeIcon className='Skills-icon' icon={faConfluence} />
             <span className='Skills-span'>Confluence</span>
           </div>
-          <div className='Skills__Content-icon15'>
-            <FontAwesomeIcon icon={faWindows} />
+          <div className='Skills__Content-icon15  flex'>
+            <FontAwesomeIcon className='Skills-icon' icon={faWindows} />
             <span className='Skills-span'>Windows</span>
           </div>
           <div className='Skills__Content-learn'>

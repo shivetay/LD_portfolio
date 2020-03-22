@@ -21,13 +21,12 @@ const About = () => {
               I have 5 years experience in IT.{' '}
             </span>{' '}
             During this time, I was able to provide solid support for
-            international clients and my work colleagues. This approach allowed
-            me to start learning some basic front and backend programing. My
-            first approach to coding was over one year ago and it was not very
-            succesful. That why I decided to go for full bootcamp experience. In
-            June is stared my Web Devloper Plus bootcamp at Kodilla. After
-            intesive 9 months with professional support provided by my mentor, I
-            managed to get my first experience with{' '}
+            international clients and my work colleagues. My first approach to
+            coding was over one year ago and it was not very succesful. That why
+            I decided to go for full bootcamp experience. In June is stared my
+            Web Devloper Plus bootcamp at Kodilla. After intesive 9 months with
+            professional support provided by my mentor, I managed to get my
+            first experience with{' '}
             <strong>
               JavaScript, HTML, CSS, React, Node.js, Express and MongoDB
             </strong>
