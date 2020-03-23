@@ -1,0 +1,12 @@
+@import '../../../styles/settings.scss';
+
+.Projects {
+  &__Container {
+    position: relative;
+  }
+  &-bg {
+    font-size: 40rem;
+    color: $color-font-contrast-second;
+    opacity: 0.15;
+  }
+}
