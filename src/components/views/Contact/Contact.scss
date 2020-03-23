@@ -1,0 +1,30 @@
+@import '../../../styles/settings.scss';
+
+.Contact {
+  &__Container {
+    position: relative;
+  }
+  &-bg {
+    font-size: 40rem;
+    color: $color-font-contrast-second;
+    opacity: 0.15;
+  }
+  &__Content {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+    text-align: justify;
+    font-size: $font-normal;
+    line-height: 1.4;
+    display: flex;
+    flex-direction: column;
+
+    &-social,
+    &-rest {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
