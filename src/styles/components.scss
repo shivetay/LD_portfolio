@@ -113,3 +113,17 @@ button {
   justify-content: center;
   align-items: center;
 }
+
+.icon-group {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 4.5rem;
+  margin: 2rem;
+  transition: all 0.3s;
+}
+
+.icon-group:hover {
+  color: $hover-link;
+}

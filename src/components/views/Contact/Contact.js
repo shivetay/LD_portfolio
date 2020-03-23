@@ -17,40 +17,49 @@ const Contact = () => {
         <span className='Contact-bg'>contact</span>
         <div className='Contact__Content'>
           <div className='Contact__Content-social'>
-            <a
-              target='_blank'
-              rel='noopener noreferrer'
-              href='https://www.linkedin.com/in/lukaszdawidowicz/'>
+            <div className='icon-group'>
+              {' '}
+              <a
+                target='_blank'
+                rel='noopener noreferrer'
+                href='https://www.linkedin.com/in/lukaszdawidowicz/'>
+                linkedin
+              </a>
               <FontAwesomeIcon icon={faLinkedin} />
-              linkedin
-            </a>
-            <a
-              target='_blank'
-              rel='noopener noreferrer'
-              href='https://github.com/shivetay'>
+            </div>
+            <div className='icon-group'>
+              <a
+                target='_blank'
+                rel='noopener noreferrer'
+                href='https://github.com/shivetay'>
+                github
+              </a>
               <FontAwesomeIcon icon={faGithub} />
-              github
-            </a>
-            <a
-              target='_blank'
-              rel='noopener noreferrer'
-              href='https://www.fiverr.com/shivetay?public_mode=true'>
+            </div>
+            <div className='icon-group'>
+              <a
+                target='_blank'
+                rel='noopener noreferrer'
+                href='https://www.fiverr.com/shivetay?public_mode=true'>
+                fiver
+              </a>
               <FontAwesomeIcon icon={faDiceFive} />
-              fiver
-            </a>
+            </div>
           </div>
           <div className='Contact__Content-rest'>
-            <span>
-              dawidowicz.lukasz@hotmail.com
+            <span className='icon-group'>
+              <a href='#'>dawidowicz.lukasz@hotmail.com</a>
               <FontAwesomeIcon icon={faEnvelope} />
             </span>
-            <a
-              target='_blank'
-              rel='noopener noreferrer'
-              href='https://1drv.ms/b/s!AmWwIHoCT8_JkFtau5aJrAbGM-hi?e=ZTyWtL'>
+            <div className='icon-group'>
+              <a
+                target='_blank'
+                rel='noopener noreferrer'
+                href='https://1drv.ms/b/s!AmWwIHoCT8_JkFtau5aJrAbGM-hi?e=ZTyWtL'>
+                CV
+              </a>
               <FontAwesomeIcon icon={faFilePdf} />
-              CV
-            </a>
+            </div>
           </div>
         </div>
       </div>
