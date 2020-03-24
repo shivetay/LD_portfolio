@@ -12,7 +12,7 @@ class Projects extends React.Component {
         tech: 'HTML, CSS/SASS, CSS Grid, RWD',
         description:
           'Small ladnign page, created with some basic HTML and CSS. This page is fully responisve. Gallery was made with CSS Grid',
-        photo: '',
+        photo: '../../layout/Images/project_lp1.png',
       },
       {
         id: 2,
@@ -21,7 +21,7 @@ class Projects extends React.Component {
         tech: 'HTML, CSS/SASS, flexbox, RWD',
         description:
           'Small ladnign page, created with some basic HTML and CSS. This page is fully responisve.',
-        photo: '',
+        photo: '../../layout/Images/project_lp2.png',
       },
       {
         id: 3,
@@ -30,7 +30,7 @@ class Projects extends React.Component {
         tech: 'HTML, CSS/SASS, Bootstrap, RWD',
         description:
           'Small ladnign page, created with Bootstrap. This page is fully responisve.',
-        photo: '',
+        photo: '../Images/project_lp3.png',
       },
       {
         id: 4,
@@ -111,39 +111,25 @@ class Projects extends React.Component {
         tech: 'HTML, CSS/SASS, React + Redux',
         description:
           'This page was created as a React practice, during my Kodilla bootcamp.',
-        photo: '',
+        photo: '../../../Images/tod_react.png',
       },
     ],
   };
 
-  // componentDidMount() {
-  //   const { fetchProjects } = this;
-
-  //   fetchProjects();
-  // }
-
-  // fetchProjects() {
-  //   fetch('../../../projectData.json')
-  //     .then(res => res.json())
-  //     .then(data => {
-  //       this.setState({ proj: data.projects });
-  //     });
-  // }
-
   render() {
-    const { proj } = this.state;
     return (
       <section className='Projects'>
         <div className='Projects__Container'>
           <span className='Projects-bg'>projects</span>
           <div className='Projects__Content'>
-            {proj.map(project => {
-              return (
-                <div key={project.id} className='Projects__Project'>
-                  <h3>{project.name}</h3>
-                </div>
-              );
-            })}
+            <div className='Projects__Project'>
+              <h3>{project.name}</h3>
+              <img src={project.photo} alt='project_img' />
+              <span className='Projects-tech'>{project.tech}</span>
+              <p className='Projects-descr'>{descr}</p>
+              <a href='link'>Demo</a>
+              <a href='git'>Code</a>
+            </div>
           </div>
         </div>
       </section>
