@@ -1,6 +1,6 @@
 import React from 'react';
 
-import photo from '../../layout/Images/ld_photo.JPG';
+import photo from '../../../Images/ld_photo.JPG';
 
 import './About.scss';
 
