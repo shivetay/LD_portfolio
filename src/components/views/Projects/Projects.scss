@@ -9,4 +9,20 @@
     color: $color-font-contrast-second;
     opacity: 0.15;
   }
+  &__Content {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+  }
+  &__Project {
+    display: flex;
+    flex-direction: column;
+  }
+  &-photo {
+    border-radius: 0;
+  }
 }

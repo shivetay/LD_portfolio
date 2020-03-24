@@ -2,6 +2,9 @@ import React from 'react';
 
 import './Projects.scss';
 
+import photo1 from '../../../Images/project_lp1.png';
+import photo2 from '../../../Images/project_lp2.png';
+
 class Projects extends React.Component {
   state = {
     proj: [
@@ -12,7 +15,7 @@ class Projects extends React.Component {
         tech: 'HTML, CSS/SASS, CSS Grid, RWD',
         description:
           'Small ladnign page, created with some basic HTML and CSS. This page is fully responisve. Gallery was made with CSS Grid',
-        photo: '../../layout/Images/project_lp1.png',
+        photo: '../../../Images/project_lp1.png',
       },
       {
         id: 2,
@@ -123,11 +126,29 @@ class Projects extends React.Component {
           <span className='Projects-bg'>projects</span>
           <div className='Projects__Content'>
             <div className='Projects__Project'>
-              <h3>{project.name}</h3>
-              <img src={project.photo} alt='project_img' />
-              <span className='Projects-tech'>{project.tech}</span>
-              <p className='Projects-descr'>{descr}</p>
-              <a href='link'>Demo</a>
+              <h3>Landing page One</h3>
+              <img className='Projects-photo' src={photo1} alt='project_img' />
+              <span className='Projects-tech'>
+                HTML, CSS/SASS, CSS Grid, RWD
+              </span>
+              <p className='Projects-descr'>
+                Small ladnign page, created with some basic HTML and CSS. This
+                page is fully responisve. Gallery was made with CSS Grid
+              </p>
+              <a href='https://shivetay.github.io/protfolio_project_1'>Demo</a>
+              <a href='git'>Code</a>
+            </div>
+            <div className='Projects__Project'>
+              <h3>Landing page Two</h3>
+              <img className='Projects-photo' src={photo2} alt='project_img' />
+              <span className='Projects-tech'>
+                HTML, CSS/SASS, flexbox, RWD
+              </span>
+              <p className='Projects-descr'>
+                Small ladnign page, created with some basic HTML and CSS. This
+                page is fully responisve.
+              </p>
+              <a href='https://shivetay.github.io/protfolio_project_2'>Demo</a>
               <a href='git'>Code</a>
             </div>
           </div>
