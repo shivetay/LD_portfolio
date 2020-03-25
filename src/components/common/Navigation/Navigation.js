@@ -4,6 +4,15 @@ import { NavLink } from 'react-router-dom';
 import './Navigation.scss';
 
 class Navigation extends Component {
+  state = {
+    navItems: [
+      { id: 1, name: 'Home', to: '/', clasName: 'link' },
+      { id: 2, name: 'About Me', to: '/about', clasName: 'link' },
+      { id: 3, name: 'Projects', to: '/projects', clasName: 'link' },
+      { id: 4, name: 'Skills', to: '/skills', clasName: 'link' },
+      { id: 5, name: 'Contact', to: '/contact', clasName: 'link' },
+    ],
+  };
   render() {
     return (
       <nav>
