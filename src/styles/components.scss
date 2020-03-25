@@ -1,4 +1,5 @@
 @import './settings.scss';
+@import './mixins.scss';
 
 h3 {
   font-size: $header-h3;
@@ -67,6 +68,18 @@ button {
   // transition: border 0.6s cubic-bezier(0.17, 0.67, 0.83, 0.67);
   transition: border 0.2s;
   background: none;
+
+  @include respond(tab-port) {
+    padding: 1rem;
+    margin-left: 4rem;
+  }
+  @include respond(mix-phone-tab) {
+    margin-left: 3rem;
+  }
+
+  @include respond(xsmall) {
+    margin-left: 2rem;
+  }
 }
 
 .btn {
@@ -77,6 +90,10 @@ button {
     margin: 0 1rem;
     display: inline-block;
     cursor: pointer;
+
+    @include respond(tab-port) {
+      margin: 0;
+    }
   }
 }
 
