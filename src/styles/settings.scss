@@ -32,3 +32,10 @@ $header-h3: 2.4rem;
 $header-h4: 2.2rem;
 
 // $font-family: 'Roboto', sans-serif;
+
+/* Brakepoints */
+
+$bp-desktop: 75em; // 1200px/16 = 75em rozdzielczosc/16px
+$bp-tablet-landscape: 56em; // 900px
+$bp-tablet-portrait: 48em; // 767px
+$bp-phone: 37em; // 599px
