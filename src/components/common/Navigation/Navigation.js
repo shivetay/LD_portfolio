@@ -37,14 +37,28 @@ class Navigation extends Component {
         clasName: 'Header__Nav-link',
       },
     ],
-    activeLink: null,
+    activeLink: '/',
+    pathName: null,
+  };
+  componentDidMount() {
+    const { checkPath } = this;
+    const { navItems } = this.state;
+    checkPath(navItems.to);
+  }
+  checkPath = toPath => {
+    const pathLocation = window.location.pathname;
+    if (toPath === pathLocation) {
+      this.setState({ pathName: pathLocation });
+    } else this.setState({ pathName: null });
   };
 
   clickItem = path => {
     this.setState({ activeLink: path });
+    this.checkPath(path);
   };
+
   render() {
-    const { navItems, activeLink } = this.state;
+    const { navItems, activeLink, pathName } = this.state;
     return (
       <nav>
         <div className='Header__Nav'>
@@ -55,29 +69,17 @@ class Navigation extends Component {
                   onClick={() => this.clickItem(item.to)}
                   className={
                     item.clasName +
-                    ' ' +
-                    (item.to === activeLink ? 'active-link' : '')
+                      ' ' +
+                      (item.to === activeLink ? 'active-link' : '') ||
+                    item.clasName +
+                      ' ' +
+                      (item.to === pathName ? 'active-link' : '')
                   }>
                   {item.name}
                 </span>
               </NavLink>
             );
           })}
-          {/* <NavLink className='link' to='/'>
-            <span className='Header__Nav-link active-link'>Home</span>
-          </NavLink>
-          <NavLink className='link' to='/about'>
-            <span className='Header__Nav-link'>About Me</span>
-          </NavLink>
-          <NavLink className='link' to='/projects'>
-            <span className='Header__Nav-link'>Projects</span>
-          </NavLink>
-          <NavLink className='link' to='/skills'>
-            <span className='Header__Nav-link'>Skills</span>
-          </NavLink>
-          <NavLink className='link' to='/contact'>
-            <span className='Header__Nav-link'>Contact</span>
-          </NavLink> */}
         </div>
       </nav>
     );
