@@ -37,6 +37,11 @@
       @content;
     }
   }
+  @if $brakepoint == desktop-big {
+    @media (min-width: $bp-desktop) {
+      @content;
+    }
+  }
   @if $brakepoint == mix-phone-tab {
     @media (max-width: $bp-tablet-portrait) and (min-width: $bp-phone) {
       @content;

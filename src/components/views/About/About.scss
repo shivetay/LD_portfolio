@@ -9,9 +9,14 @@
     font-size: 55rem;
     color: $color-font-contrast-second;
     opacity: 0.15;
+    @include respond(desktop-big) {
+      font-size: 48rem;
+    }
     @include respond(desktop) {
-      margin-left: 5rem;
       font-size: 38rem;
+    }
+    @include respond(desktop-small) {
+      font-size: 36rem;
     }
     @include respond(tab-port) {
       font-size: 34rem;
@@ -28,7 +33,7 @@
 
   &__Content {
     position: absolute;
-    top: 45%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 99;
@@ -37,19 +42,19 @@
     line-height: 1.4;
 
     @include respond(desktop) {
-      top: 75%;
+      top: 60%;
     }
     @include respond(desktop-small) {
-      top: 75%;
+      top: 60%;
     }
     @include respond(tab-port) {
-      top: 75%;
+      top: 60%;
     }
     @include respond(phone) {
-      top: 75%;
+      top: 60%;
     }
     @include respond(xsmall) {
-      top: 75%;
+      top: 100%;
     }
     &-img {
       margin: 6rem 0;
