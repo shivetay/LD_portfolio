@@ -1,12 +1,34 @@
 @import '../../../styles/settings.scss';
+@import '../../../styles/mixins.scss';
 
 .Home {
   &__Header {
     position: relative;
+
+    @include respond(phone) {
+      position: initial;
+    }
+    @include respond(xsmall) {
+      position: initial;
+    }
     &-bg {
       font-size: 55rem;
       color: $color-font-contrast-second;
       opacity: 0.15;
+
+      @include respond(desktop) {
+        margin-left: 5rem;
+        font-size: 45rem;
+      }
+      @include respond(tab-port) {
+        font-size: 38rem;
+      }
+      @include respond(phone) {
+        display: none;
+      }
+      @include respond(xsmall) {
+        display: none;
+      }
     }
   }
   &__Section {
@@ -27,6 +49,17 @@
     }
     &-btn {
       margin: 1rem 0 0 -5.5rem;
+
+      @include respond(tab-port) {
+        margin-left: -4.5rem;
+        display: block;
+      }
+      @include respond(phone) {
+        display: block;
+      }
+      @include respond(xsmall) {
+        margin-left: -3rem;
+      }
     }
   }
 }

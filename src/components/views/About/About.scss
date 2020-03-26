@@ -1,27 +1,76 @@
 @import '../../../styles/settings.scss';
+@import '../../../styles/mixins.scss';
 
 .About {
   &__Container {
     position: relative;
+
+    @include respond(phone) {
+      position: initial;
+    }
+    @include respond(xsmall) {
+      position: initial;
+    }
   }
   &-bg {
     font-size: 55rem;
     color: $color-font-contrast-second;
     opacity: 0.15;
+    @include respond(desktop-big) {
+      font-size: 48rem;
+    }
+    @include respond(desktop) {
+      font-size: 38rem;
+    }
+    @include respond(desktop-small) {
+      font-size: 36rem;
+    }
+    @include respond(tab-port) {
+      font-size: 34rem;
+    }
+    @include respond(phone) {
+      display: none;
+    }
+    @include respond(xsmall) {
+      display: none;
+    }
   }
 
   &__Content {
     position: absolute;
-    top: 45%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 99;
     text-align: justify;
     font-size: $font-normal;
     line-height: 1.4;
+
+    @include respond(desktop) {
+      top: 60%;
+    }
+    @include respond(desktop-small) {
+      top: 60%;
+    }
+    @include respond(tab-port) {
+      top: 70%;
+    }
+    @include respond(phone) {
+      top: 45%;
+    }
+    @include respond(xsmall) {
+      top: 45%;
+    }
     &-img {
       margin: 6rem 0;
       padding: 1rem;
+
+      @include respond(phone) {
+        display: none;
+      }
+      @include respond(xsmall) {
+        display: none;
+      }
     }
     &-span {
       font-size: $font-large;

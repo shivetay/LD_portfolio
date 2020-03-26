@@ -1,13 +1,36 @@
 @import '../../../styles/settings.scss';
+@import '../../../styles/mixins.scss';
 
 .Contact {
   &__Container {
     position: relative;
+    @include respond(phone) {
+      position: initial;
+    }
+    @include respond(xsmall) {
+      position: initial;
+    }
   }
   &-bg {
     font-size: 40rem;
     color: $color-font-contrast-second;
     opacity: 0.15;
+
+    @include respond(desktop) {
+      font-size: 34rem;
+    }
+    @include respond(desktop-small) {
+      font-size: 32rem;
+    }
+    @include respond(tab-port) {
+      font-size: 30rem;
+    }
+    @include respond(phone) {
+      display: none;
+    }
+    @include respond(xsmall) {
+      display: none;
+    }
   }
   &__Content {
     position: absolute;
@@ -20,6 +43,22 @@
     line-height: 1.4;
     display: flex;
     flex-direction: column;
+
+    @include respond(desktop) {
+      top: 60%;
+    }
+    @include respond(desktop-small) {
+      top: 60%;
+    }
+    @include respond(tab-port) {
+      top: 45%;
+    }
+    @include respond(phone) {
+      top: 45%;
+    }
+    @include respond(xsmall) {
+      top: 45%;
+    }
 
     &-social,
     &-rest {
