@@ -117,6 +117,17 @@ button {
   gap: 2rem;
   justify-items: stretch center;
   align-items: center;
+
+  @include respond(tab-port) {
+    grid-template-rows: repeat(8, min-content);
+  }
+  @include respond(phone) {
+    grid-template-rows: repeat(8, min-content);
+  }
+
+  // @include respond(xsmall) {
+  //   margin-left: 2rem;
+  // }
 }
 
 /* helper classes */

@@ -1,4 +1,5 @@
 @import '../../../styles/settings.scss';
+@import '../../../styles/mixins.scss';
 
 .Skills {
   &__Container {
@@ -8,6 +9,27 @@
     font-size: 55rem;
     color: $color-font-contrast-second;
     opacity: 0.15;
+
+    // @include respond(desktop-big) {
+    //   font-size: 48rem;
+    // }
+    @include respond(desktop) {
+      font-size: 38rem;
+    }
+    @include respond(desktop-small) {
+      font-size: 36rem;
+    }
+    @include respond(tab-port) {
+      font-size: 34rem;
+    }
+    @include respond(phone) {
+      visibility: none;
+      opacity: 0;
+    }
+    @include respond(xsmall) {
+      visibility: none;
+      opacity: 0;
+    }
   }
   &__Content {
     position: absolute;
@@ -16,24 +38,111 @@
     transform: translate(-50%, -50%);
     z-index: 99;
     text-transform: lowercase;
+
+    @include respond(desktop) {
+      top: 60%;
+    }
+    @include respond(desktop-small) {
+      top: 60%;
+    }
+    @include respond(tab-port) {
+      top: 80%;
+    }
+    @include respond(phone) {
+      top: 80%;
+    }
+    @include respond(xsmall) {
+      top: 100%;
+    }
     &-front {
       grid-column: full-start / span 2;
       grid-row: 1 / 1;
+
+      @include respond(tab-port) {
+        grid-column: 2 / -1;
+        grid-row: 1 / 1;
+        justify-content: center;
+      }
+      @include respond(phone) {
+        grid-column: 2 / -1;
+        grid-row: 1 / 1;
+      }
+
+      // @include respond(xsmall) {
+      //   margin-left: 2rem;
+      // }
     }
     &-back {
       grid-column: full-start / span 2;
       grid-row: 2 / 2;
+
+      @include respond(tab-port) {
+        grid-column: 2 / -1;
+        grid-row: 3 / 3;
+        justify-content: center;
+      }
+      @include respond(phone) {
+        grid-column: 2 / -1;
+        grid-row: 3 / 3;
+      }
+
+      // @include respond(xsmall) {
+      //   margin-left: 2rem;
+      // }
     }
     &-other {
       grid-column: full-start / span 2;
       grid-row: 3 / 3;
+
+      @include respond(tab-port) {
+        grid-column: 2 / -1;
+        grid-row: 5 / 5;
+        justify-content: center;
+      }
+      @include respond(phone) {
+        grid-column: 2 / -1;
+        grid-row: 5 / 5;
+      }
+
+      // @include respond(xsmall) {
+      //   margin-left: 2rem;
+      // }
     }
     &-learn {
       grid-column: full-start / span 2;
       grid-row: 4 / 4;
+
+      @include respond(tab-port) {
+        grid-column: 2 / -1;
+        grid-row: 7 / 7;
+        justify-content: center;
+      }
+      @include respond(phone) {
+        grid-column: 2 / -1;
+        grid-row: 7 / 7;
+      }
+
+      // @include respond(xsmall) {
+      //   margin-left: 2rem;
+      // }
     }
     &-icon1 {
       grid-column: 3 / 3;
+    }
+    &-icon2 {
+      grid-column: 4 / 4;
+    }
+    &-icon3 {
+      grid-column: 5 / 5;
+    }
+    &-icon4 {
+      grid-column: 6 / 6;
+    }
+    &-icon5 {
+      grid-column: 7 / 7;
+    }
+    &-icon6 {
+      grid-column: 8 / 8;
     }
     &-icon7 {
       grid-column: 4 / 4;
@@ -71,14 +180,131 @@
       grid-column: 8 / 8;
       grid-row: 3 / 3;
     }
+    // &-icon1 {
+    //   @include respond(tab-port) {
+    //     grid-column: 6 / 6;
+    //   }
+    //   @include respond(phone) {
+    //     grid-column: 6 / 6;
+    //   }
+
+    //   // @include respond(xsmall) {
+    //   //   margin-left: 2rem;
+    //   // }
+    // }
+    // &-icon2 {
+    //   @include respond(tab-port) {
+    //     grid-column: 7 / 7;
+    //   }
+    //   @include respond(phone) {
+    //     grid-column: 7 / 7;
+    //   }
+
+    //   // @include respond(xsmall) {
+    //   //   margin-left: 2rem;
+    //   // }
+    // }
+    // &-icon3 {
+    //   @include respond(tab-port) {
+    //     grid-column: 8 / 8;
+    //   }
+    //   @include respond(phone) {
+    //     grid-column: 8 / 8;
+    //   }
+
+    //   // @include respond(xsmall) {
+    //   //   margin-left: 2rem;
+    //   // }
+    // }
+    &-icon1,
+    &-icon2,
+    &-icon3,
+    &-icon4,
+    &-icon5,
+    &-icon6 {
+      @include respond(tab-port) {
+        grid-row: 2 / 2;
+      }
+      @include respond(phone) {
+        grid-row: 2 / 2;
+      }
+
+      // @include respond(xsmall) {
+      //   margin-left: 2rem;
+      // }
+    }
+    &-icon7,
+    &-icon8 {
+      @include respond(tab-port) {
+        grid-row: 4 / 4;
+      }
+      @include respond(phone) {
+        grid-row: 4 / 4;
+      }
+
+      // @include respond(xsmall) {
+      //   margin-left: 2rem;
+      // }
+    }
+    &-icon9,
+    &-icon10,
+    &-icon11,
+    &-icon12,
+    &-icon13,
+    &-icon14,
+    &-icon15 {
+      @include respond(tab-port) {
+        grid-row: 6 / 6;
+      }
+      @include respond(phone) {
+        grid-row: 6 / 6;
+      }
+
+      // @include respond(xsmall) {
+      //   margin-left: 2rem;
+      // }
+    }
+
     &-text {
       grid-column: 3 / -1;
       grid-row: 4 / 4;
+      @include respond(tab-port) {
+        grid-row: 8 / 8;
+      }
+      @include respond(phone) {
+        grid-row: 8 / 8;
+      }
+
+      // @include respond(xsmall) {
+      //   margin-left: 2rem;
+      // }
+    }
+    @include respond(desktop) {
+      top: 60%;
+    }
+    @include respond(desktop-small) {
+      top: 60%;
+    }
+    @include respond(tab-port) {
+      top: 80%;
+    }
+    @include respond(phone) {
+      top: 80%;
+    }
+    @include respond(xsmall) {
+      top: 100%;
     }
   }
   &-icon {
     font-size: 4.5rem;
     margin: 2rem;
+
+    @include respond(phone) {
+      font-size: 3.5rem;
+    }
+    @include respond(xsmall) {
+      font-size: 2.5rem;
+    }
   }
   &-span {
     font-size: $font-normal;
