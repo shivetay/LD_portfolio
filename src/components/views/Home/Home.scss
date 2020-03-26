@@ -4,6 +4,13 @@
 .Home {
   &__Header {
     position: relative;
+
+    @include respond(phone) {
+      position: initial;
+    }
+    @include respond(xsmall) {
+      position: initial;
+    }
     &-bg {
       font-size: 55rem;
       color: $color-font-contrast-second;
@@ -17,10 +24,10 @@
         font-size: 38rem;
       }
       @include respond(phone) {
-        font-size: 36rem;
+        display: none;
       }
       @include respond(xsmall) {
-        font-size: 26rem;
+        display: none;
       }
     }
   }
@@ -45,6 +52,10 @@
 
       @include respond(tab-port) {
         margin-left: -4.5rem;
+        display: block;
+      }
+      @include respond(phone) {
+        display: block;
       }
       @include respond(xsmall) {
         margin-left: -3rem;

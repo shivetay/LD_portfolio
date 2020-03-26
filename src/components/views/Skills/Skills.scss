@@ -4,15 +4,19 @@
 .Skills {
   &__Container {
     position: relative;
+
+    @include respond(phone) {
+      position: initial;
+    }
+    @include respond(xsmall) {
+      position: initial;
+    }
   }
   &-bg {
     font-size: 55rem;
     color: $color-font-contrast-second;
     opacity: 0.15;
 
-    // @include respond(desktop-big) {
-    //   font-size: 48rem;
-    // }
     @include respond(desktop) {
       font-size: 38rem;
     }
@@ -23,12 +27,10 @@
       font-size: 34rem;
     }
     @include respond(phone) {
-      visibility: none;
-      opacity: 0;
+      display: none;
     }
     @include respond(xsmall) {
-      visibility: none;
-      opacity: 0;
+      display: none;
     }
   }
   &__Content {
@@ -40,20 +42,22 @@
     text-transform: lowercase;
 
     @include respond(desktop) {
-      top: 60%;
+      top: 80%;
     }
     @include respond(desktop-small) {
-      top: 60%;
+      top: 80%;
     }
     @include respond(tab-port) {
       top: 80%;
     }
+
     @include respond(phone) {
-      top: 80%;
+      top: 45%;
     }
     @include respond(xsmall) {
-      top: 100%;
+      top: 45%;
     }
+
     &-front {
       grid-column: full-start / span 2;
       grid-row: 1 / 1;
@@ -67,10 +71,6 @@
         grid-column: 2 / -1;
         grid-row: 1 / 1;
       }
-
-      // @include respond(xsmall) {
-      //   margin-left: 2rem;
-      // }
     }
     &-back {
       grid-column: full-start / span 2;
@@ -85,10 +85,6 @@
         grid-column: 2 / -1;
         grid-row: 3 / 3;
       }
-
-      // @include respond(xsmall) {
-      //   margin-left: 2rem;
-      // }
     }
     &-other {
       grid-column: full-start / span 2;
@@ -103,11 +99,8 @@
         grid-column: 2 / -1;
         grid-row: 5 / 5;
       }
-
-      // @include respond(xsmall) {
-      //   margin-left: 2rem;
-      // }
     }
+
     &-learn {
       grid-column: full-start / span 2;
       grid-row: 4 / 4;
@@ -121,11 +114,8 @@
         grid-column: 2 / -1;
         grid-row: 7 / 7;
       }
-
-      // @include respond(xsmall) {
-      //   margin-left: 2rem;
-      // }
     }
+
     &-icon1 {
       grid-column: 3 / 3;
     }
@@ -180,42 +170,7 @@
       grid-column: 8 / 8;
       grid-row: 3 / 3;
     }
-    // &-icon1 {
-    //   @include respond(tab-port) {
-    //     grid-column: 6 / 6;
-    //   }
-    //   @include respond(phone) {
-    //     grid-column: 6 / 6;
-    //   }
 
-    //   // @include respond(xsmall) {
-    //   //   margin-left: 2rem;
-    //   // }
-    // }
-    // &-icon2 {
-    //   @include respond(tab-port) {
-    //     grid-column: 7 / 7;
-    //   }
-    //   @include respond(phone) {
-    //     grid-column: 7 / 7;
-    //   }
-
-    //   // @include respond(xsmall) {
-    //   //   margin-left: 2rem;
-    //   // }
-    // }
-    // &-icon3 {
-    //   @include respond(tab-port) {
-    //     grid-column: 8 / 8;
-    //   }
-    //   @include respond(phone) {
-    //     grid-column: 8 / 8;
-    //   }
-
-    //   // @include respond(xsmall) {
-    //   //   margin-left: 2rem;
-    //   // }
-    // }
     &-icon1,
     &-icon2,
     &-icon3,
@@ -228,11 +183,8 @@
       @include respond(phone) {
         grid-row: 2 / 2;
       }
-
-      // @include respond(xsmall) {
-      //   margin-left: 2rem;
-      // }
     }
+
     &-icon7,
     &-icon8 {
       @include respond(tab-port) {
@@ -241,11 +193,8 @@
       @include respond(phone) {
         grid-row: 4 / 4;
       }
-
-      // @include respond(xsmall) {
-      //   margin-left: 2rem;
-      // }
     }
+
     &-icon9,
     &-icon10,
     &-icon11,
@@ -259,10 +208,6 @@
       @include respond(phone) {
         grid-row: 6 / 6;
       }
-
-      // @include respond(xsmall) {
-      //   margin-left: 2rem;
-      // }
     }
 
     &-text {
@@ -274,25 +219,6 @@
       @include respond(phone) {
         grid-row: 8 / 8;
       }
-
-      // @include respond(xsmall) {
-      //   margin-left: 2rem;
-      // }
-    }
-    @include respond(desktop) {
-      top: 60%;
-    }
-    @include respond(desktop-small) {
-      top: 60%;
-    }
-    @include respond(tab-port) {
-      top: 80%;
-    }
-    @include respond(phone) {
-      top: 80%;
-    }
-    @include respond(xsmall) {
-      top: 100%;
     }
   }
   &-icon {

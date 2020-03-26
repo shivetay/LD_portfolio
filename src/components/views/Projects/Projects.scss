@@ -23,12 +23,10 @@
       font-size: 34rem;
     }
     @include respond(phone) {
-      visibility: none;
-      opacity: 0;
+      display: none;
     }
     @include respond(xsmall) {
-      visibility: none;
-      opacity: 0;
+      display: none;
     }
   }
   &__Content {

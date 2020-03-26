@@ -4,6 +4,13 @@
 .About {
   &__Container {
     position: relative;
+
+    @include respond(phone) {
+      position: initial;
+    }
+    @include respond(xsmall) {
+      position: initial;
+    }
   }
   &-bg {
     font-size: 55rem;
@@ -22,12 +29,10 @@
       font-size: 34rem;
     }
     @include respond(phone) {
-      visibility: none;
-      opacity: 0;
+      display: none;
     }
     @include respond(xsmall) {
-      visibility: none;
-      opacity: 0;
+      display: none;
     }
   }
 
@@ -48,13 +53,13 @@
       top: 60%;
     }
     @include respond(tab-port) {
-      top: 60%;
+      top: 70%;
     }
     @include respond(phone) {
-      top: 60%;
+      top: 45%;
     }
     @include respond(xsmall) {
-      top: 100%;
+      top: 45%;
     }
     &-img {
       margin: 6rem 0;
