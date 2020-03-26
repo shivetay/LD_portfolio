@@ -1,4 +1,5 @@
 @import '../../../styles/settings.scss';
+@import '../../../styles/mixins.scss';
 
 .Header {
   display: flex;
@@ -16,14 +17,46 @@
     &-paragraph {
       align-self: flex-end;
       color: $color-font-contrast;
+      @include respond(phone) {
+        align-self: flex-start;
+      }
+      @include respond(xsmall) {
+        align-self: flex-start;
+      }
     }
   }
   &__Nav {
     font-size: $font-normal;
     margin-right: 2rem;
+    @include respond(tab-port) {
+      margin-right: 0.5rem;
+    }
+
+    @include respond(phone) {
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: 0.5rem;
+    }
+    @include respond(xsmall) {
+      margin-right: 0.5rem;
+      display: flex;
+      flex-wrap: wrap;
+    }
     &-link {
       margin: 0 3rem;
       transition: all 0.3s;
+      @include respond(tab-port) {
+        margin: 0 1rem;
+      }
+
+      @include respond(phone) {
+        margin: 0 1rem;
+        flex: 100%;
+      }
+      @include respond(xsmall) {
+        margin: 0 1rem;
+        flex: 100%;
+      }
     }
     &-link:hover {
       color: $hover-link;
