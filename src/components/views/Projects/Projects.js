@@ -27,7 +27,7 @@ class Projects extends React.Component {
           <span className='Projects-bg'>projects</span>
           <div className='Projects__Content'>
             <div className='Projects__Project'>
-              <h3 className='Projects-name'>Landing page One</h3>
+              <h3 className='Projects-name'>Landing page</h3>
               <img className='Projects-photo' src={photo1} alt='project_img' />
               <span className='Projects-tech'>
                 HTML, CSS/SASS, CSS Grid, RWD
@@ -48,7 +48,7 @@ class Projects extends React.Component {
               </div>
             </div>
             <div className='Projects__Project'>
-              <h3 className='Projects-name'>Landing page Two</h3>
+              <h3 className='Projects-name'>Landing page</h3>
               <img className='Projects-photo' src={photo2} alt='project_img' />
               <span className='Projects-tech'>
                 HTML, CSS/SASS, flexbox, RWD
@@ -69,7 +69,7 @@ class Projects extends React.Component {
               </div>
             </div>
             <div className='Projects__Project'>
-              <h3 className='Projects-name'>Landing page Three</h3>
+              <h3 className='Projects-name'>Landing page</h3>
               <img className='Projects-photo' src={photo3} alt='project_img' />
               <span className='Projects-tech'>
                 HTML, CSS/SASS, Bootstrap, RWD
