@@ -37,13 +37,17 @@ class Projects extends React.Component {
                 page is fully responisve. Gallery was made with CSS Grid
               </p>
               <div className='Project-button'>
-                <button>
-                  <a href='https://shivetay.github.io/protfolio_project_1'>
+                <button className='btn'>
+                  <a
+                    className='btn-aTag'
+                    href='https://shivetay.github.io/protfolio_project_1'>
                     Demo
                   </a>
                 </button>
-                <button>
-                  <a href='https://github.com/shivetay/protfolio_project_1'>
+                <button className='btn'>
+                  <a
+                    className='btn-aTag'
+                    href='https://github.com/shivetay/protfolio_project_1'>
                     Code
                   </a>
                 </button>
@@ -60,13 +64,17 @@ class Projects extends React.Component {
                 page is fully responisve.
               </p>
               <div className='Project-button'>
-                <button>
-                  <a href='https://shivetay.github.io/protfolio_project_2'>
+                <button className='btn'>
+                  <a
+                    className='btn-aTag'
+                    href='https://shivetay.github.io/protfolio_project_2'>
                     Demo
                   </a>
                 </button>
-                <button>
-                  <a href='https://github.com/shivetay/portfolio_project_2'>
+                <button className='btn'>
+                  <a
+                    className='btn-aTag'
+                    href='https://github.com/shivetay/portfolio_project_2'>
                     Code
                   </a>
                 </button>
@@ -83,13 +91,17 @@ class Projects extends React.Component {
                 responisve.
               </p>
               <div className='Project-button'>
-                <button>
-                  <a href='https://shivetay.github.io/protfolio_project_3'>
+                <button className='btn'>
+                  <a
+                    className='btn-aTag'
+                    href='https://shivetay.github.io/protfolio_project_3'>
                     Demo
                   </a>
                 </button>
-                <button>
-                  <a href='https://github.com/shivetay/portfolio_project_3'>
+                <button className='btn'>
+                  <a
+                    className='btn-aTag'
+                    href='https://github.com/shivetay/portfolio_project_3'>
                     Code
                   </a>
                 </button>
@@ -104,13 +116,17 @@ class Projects extends React.Component {
                 Vanila JavaScript. Weather is generet from openweatherAPI.
               </p>
               <div className='Project-button'>
-                <button>
-                  <a href='https://shivetay.github.io/vanila_js_wheaterApp/'>
+                <button className='btn'>
+                  <a
+                    className='btn-aTag'
+                    href='https://shivetay.github.io/vanila_js_wheaterApp/'>
                     Demo
                   </a>
                 </button>
-                <button>
-                  <a href='https://github.com/shivetay/vanila_js_wheaterApp'>
+                <button className='btn'>
+                  <a
+                    className='btn-aTag'
+                    href='https://github.com/shivetay/vanila_js_wheaterApp'>
                     Code
                   </a>
                 </button>
@@ -127,11 +143,17 @@ class Projects extends React.Component {
                 Kodilla bootcamp. Main goal was to use mongo as a database.
               </p>
               <div className='Project-button'>
-                <button>
-                  <a href='https://damp-gorge-76852.herokuapp.com/'>Demo</a>
+                <button className='btn'>
+                  <a
+                    className='btn-aTag'
+                    href='https://damp-gorge-76852.herokuapp.com/'>
+                    Demo
+                  </a>
                 </button>
-                <button>
-                  <a href='https://github.com/shivetay/kodilla_express_tickets'>
+                <button className='btn'>
+                  <a
+                    className='btn-aTag'
+                    href='https://github.com/shivetay/kodilla_express_tickets'>
                     Code
                   </a>
                 </button>
@@ -181,11 +203,19 @@ class Projects extends React.Component {
                 Kodilla bootcamp.
               </p>
               <div className='Project-button'>
-                <button>
-                  <a href='https://shivetay.github.io/kodill_blog/'>Demo</a>
+                <button className='btn'>
+                  <a
+                    className='btn-aTag'
+                    href='https://shivetay.github.io/kodill_blog/'>
+                    Demo
+                  </a>
                 </button>
-                <button>
-                  <a href='https://github.com/shivetay/kodill_blog'>Code</a>
+                <button className='btn'>
+                  <a
+                    className='btn-aTag'
+                    href='https://github.com/shivetay/kodill_blog'>
+                    Code
+                  </a>
                 </button>
               </div>
             </div>
@@ -198,11 +228,19 @@ class Projects extends React.Component {
                 Kodilla bootcamp.
               </p>
               <div className='Project-button'>
-                <button>
-                  <a href='https://pizza-kodilla-54318.herokuapp.com/'>Demo</a>
+                <button className='btn'>
+                  <a
+                    className='btn-aTag'
+                    href='https://pizza-kodilla-54318.herokuapp.com/'>
+                    Demo
+                  </a>
                 </button>
-                <button>
-                  <a href='https://github.com/shivetay/kodilla_pizza'>Code</a>
+                <button className='btn'>
+                  <a
+                    className='btn-aTag'
+                    href='https://github.com/shivetay/kodilla_pizza'>
+                    Code
+                  </a>
                 </button>
               </div>
             </div>
@@ -218,11 +256,17 @@ class Projects extends React.Component {
                 customer.
               </p>
               <div className='Project-button'>
-                <button>
-                  <a href='https://stupefied-lewin-977cb1.netlify.com/'>Demo</a>
+                <button className='btn'>
+                  <a
+                    className='btn-aTag'
+                    href='https://stupefied-lewin-977cb1.netlify.com/'>
+                    Demo
+                  </a>
                 </button>
-                <button>
-                  <a href='https://github.com/Neonides/kodilla-wdp-1912-01'>
+                <button className='btn'>
+                  <a
+                    className='btn-aTag'
+                    href='https://github.com/Neonides/kodilla-wdp-1912-01'>
                     Code
                   </a>
                 </button>
@@ -237,13 +281,17 @@ class Projects extends React.Component {
                 bootcamp. Main goal here was, to cut PSD to working website.
               </p>
               <div className='Project-button'>
-                <button>
-                  <a href='https://shivetay.github.io/kodilla_dashbord/'>
+                <button className='btn'>
+                  <a
+                    className='btn-aTag'
+                    href='https://shivetay.github.io/kodilla_dashbord/'>
                     Demo
                   </a>
                 </button>
-                <button>
-                  <a href='https://github.com/shivetay/kodilla_dashbord'>
+                <button className='btn'>
+                  <a
+                    className='btn-aTag'
+                    href='https://github.com/shivetay/kodilla_dashbord'>
                     Code
                   </a>
                 </button>
@@ -260,11 +308,17 @@ class Projects extends React.Component {
                 bootcamp.
               </p>
               <div className='Project-button'>
-                <button>
-                  <a href='https://todo-kodilla.herokuapp.com/'>Demo</a>
+                <button className='btn'>
+                  <a
+                    className='btn-aTag'
+                    href='https://todo-kodilla.herokuapp.com/'>
+                    Demo
+                  </a>
                 </button>
-                <button>
-                  <a href='https://github.com/shivetay/kodilla_to_do_react'>
+                <button className='btn'>
+                  <a
+                    className='btn-aTag'
+                    href='https://github.com/shivetay/kodilla_to_do_react'>
                     Code
                   </a>
                 </button>
