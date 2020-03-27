@@ -87,14 +87,19 @@ button {
     margin: 0 1rem;
     display: inline-block;
     cursor: pointer;
+    text-transform: lowercase;
 
     @include respond(tab-port) {
       margin: 0;
     }
   }
+  &-aTag {
+    transition: all 0.8s;
+  }
 }
 
-.btn:hover .btn-span {
+.btn:hover .btn-span,
+.btn:hover .btn-aTag {
   color: $hover-link;
 }
 
