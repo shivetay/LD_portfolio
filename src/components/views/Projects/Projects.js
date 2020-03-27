@@ -7,12 +7,12 @@ import photo2 from '../../../Images/project_lp2.png';
 import photo3 from '../../../Images/project_lp3.png';
 import photo4 from '../../../Images/pogodynka.png';
 import photo5 from '../../../Images/new_wave.png';
-import photo6 from '../../../Images/new_wave.png';
-import photo7 from '../../../Images/pizza_restaur.png';
+// import photo6 from '../../../Images/new_wave.png';
+// import photo7 from '../../../Images/pizza_restaur.png';
 import photo8 from '../../../Images/project_blog.png';
 import photo9 from '../../../Images/pizza_restaur.png';
 import photo10 from '../../../Images/group_pr.png';
-import photo11 from '../../../Images/group_pr.png';
+import photo11 from '../../../Images/dashboard.png';
 import photo12 from '../../../Images/tod_react.png';
 
 class Projects extends React.Component {
@@ -43,7 +43,9 @@ class Projects extends React.Component {
                   </a>
                 </button>
                 <button>
-                  <a href='git'>Code</a>
+                  <a href='https://github.com/shivetay/protfolio_project_1'>
+                    Code
+                  </a>
                 </button>
               </div>
             </div>
@@ -64,7 +66,9 @@ class Projects extends React.Component {
                   </a>
                 </button>
                 <button>
-                  <a href='git'>Code</a>
+                  <a href='https://github.com/shivetay/portfolio_project_2'>
+                    Code
+                  </a>
                 </button>
               </div>
             </div>
@@ -85,7 +89,9 @@ class Projects extends React.Component {
                   </a>
                 </button>
                 <button>
-                  <a href='git'>Code</a>
+                  <a href='https://github.com/shivetay/portfolio_project_3'>
+                    Code
+                  </a>
                 </button>
               </div>
             </div>
@@ -104,7 +110,9 @@ class Projects extends React.Component {
                   </a>
                 </button>
                 <button>
-                  <a href='git'>Code</a>
+                  <a href='https://github.com/shivetay/vanila_js_wheaterApp'>
+                    Code
+                  </a>
                 </button>
               </div>
             </div>
@@ -123,11 +131,13 @@ class Projects extends React.Component {
                   <a href='https://damp-gorge-76852.herokuapp.com/'>Demo</a>
                 </button>
                 <button>
-                  <a href='git'>Code</a>
+                  <a href='https://github.com/shivetay/kodilla_express_tickets'>
+                    Code
+                  </a>
                 </button>
               </div>
             </div>
-            <div className='Projects__Project'>
+            {/* <div className='Projects__Project'>
               <h3 className='Projects-name'>Travle agency</h3>
               <img className='Projects-photo' src={photo6} alt='project_img' />
               <span className='Projects-tech'>
@@ -135,16 +145,16 @@ class Projects extends React.Component {
               </span>
               <p className='Projects-descr'>
                 This page was created as a React practice, during my Kodilla
-                bootcamp. Main goal was to use fix all bugs. Also this page was
-                done with TDD. To run this project use: yarn start.
+                bootcamp. Main goal was to fix all bugs. Also this page was done
+                with TDD. To run this project use: yarn start.
               </p>
               <div className='Project-button'>
                 <button>
                   <a href='git'>Code</a>
                 </button>
               </div>
-            </div>
-            <div className='Projects__Project'>
+            </div> */}
+            {/* <div className='Projects__Project'>
               <h3 className='Projects-name'>Pizza Portal</h3>
               <img className='Projects-photo' src={photo7} alt='project_img' />
               <span className='Projects-tech'>
@@ -161,7 +171,7 @@ class Projects extends React.Component {
                   <a href='git'>Code</a>
                 </button>
               </div>
-            </div>
+            </div> */}
             <div className='Projects__Project'>
               <h3 className='Projects-name'>JavaScript Blog</h3>
               <img className='Projects-photo' src={photo8} alt='project_img' />
@@ -175,7 +185,7 @@ class Projects extends React.Component {
                   <a href='https://shivetay.github.io/kodill_blog/'>Demo</a>
                 </button>
                 <button>
-                  <a href='git'>Code</a>
+                  <a href='https://github.com/shivetay/kodill_blog'>Code</a>
                 </button>
               </div>
             </div>
@@ -192,7 +202,7 @@ class Projects extends React.Component {
                   <a href='https://pizza-kodilla-54318.herokuapp.com/'>Demo</a>
                 </button>
                 <button>
-                  <a href='git'>Code</a>
+                  <a href='https://github.com/shivetay/kodilla_pizza'>Code</a>
                 </button>
               </div>
             </div>
@@ -212,7 +222,9 @@ class Projects extends React.Component {
                   <a href='https://stupefied-lewin-977cb1.netlify.com/'>Demo</a>
                 </button>
                 <button>
-                  <a href='git'>Code</a>
+                  <a href='https://github.com/Neonides/kodilla-wdp-1912-01'>
+                    Code
+                  </a>
                 </button>
               </div>
             </div>
@@ -231,7 +243,9 @@ class Projects extends React.Component {
                   </a>
                 </button>
                 <button>
-                  <a href='git'>Code</a>
+                  <a href='https://github.com/shivetay/kodilla_dashbord'>
+                    Code
+                  </a>
                 </button>
               </div>
             </div>
@@ -250,7 +264,9 @@ class Projects extends React.Component {
                   <a href='https://todo-kodilla.herokuapp.com/'>Demo</a>
                 </button>
                 <button>
-                  <a href='git'>Code</a>
+                  <a href='https://github.com/shivetay/kodilla_to_do_react'>
+                    Code
+                  </a>
                 </button>
               </div>
             </div>
