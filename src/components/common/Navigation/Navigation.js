@@ -40,45 +40,54 @@ class Navigation extends Component {
     activeLink: '/',
     pathName: null,
   };
-  componentDidMount() {
-    const { checkPath } = this;
-    const { navItems } = this.state;
-    checkPath(navItems.to);
-  }
-  checkPath = toPath => {
-    const pathLocation = window.location.pathname;
-    if (toPath === pathLocation) {
-      this.setState({ pathName: pathLocation });
-    } else this.setState({ pathName: null });
-  };
+  // componentDidMount() {
+  //   const { checkPath } = this;
+  //   const { navItems } = this.state;
+  //   checkPath(navItems.to);
+  // }
+  // checkPath = toPath => {
+  //   const pathLocation = window.location.pathname;
+  //   if (toPath === pathLocation) {
+  //     this.setState({ pathName: pathLocation });
+  //   } else this.setState({ pathName: null });
+  // };
 
-  clickItem = path => {
-    this.setState({ activeLink: path });
-    this.checkPath(path);
-  };
+  // clickItem = path => {
+  //   this.setState({ activeLink: path });
+  //   this.checkPath(path);
+  // };
 
   render() {
-    const { navItems, activeLink, pathName } = this.state;
+    const { navItems } = this.state;
+    // const { props } = this;
     return (
       <nav>
         <div className='Header__Nav'>
           {navItems.map(item => {
             return (
-              <NavLink key={item.id} className='link' to={item.to}>
-                <span
-                  onClick={() => this.clickItem(item.to)}
+              <NavLink
+                exact={true}
+                key={item.id}
+                className='link'
+                activeClassName='active-link'
+                to={item.to}>
+                {item.name}
+                {/* <span
                   className={
-                    item.clasName +
-                    ' ' +
-                    (item.to === activeLink || item.to === pathName
-                      ? 'active-link'
-                      : '')
-                    // item.clasName +
+                    item.clasName
+                    // onClick={() => this.clickItem(item.to)}
+                    // className={
+                    //   item.clasName +
                     //   ' ' +
-                    //   (item.to === pathName ? 'active-link' : '')
+                    //   (item.to === activeLink || item.to === pathName
+                    //     ? 'active-link'
+                    //     : '')
+                    //   // item.clasName +
+                    //   //   ' ' +
+                    //   //   (item.to === pathName ? 'active-link' : '')
                   }>
                   {item.name}
-                </span>
+                </span> */}
               </NavLink>
             );
           })}

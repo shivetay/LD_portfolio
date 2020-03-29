@@ -5,6 +5,7 @@ import './Home.scss';
 
 class Home extends Component {
   render() {
+    // const { props } = this;
     return (
       <section className='Home'>
         <div className='Home__Header'>
@@ -18,17 +19,17 @@ class Home extends Component {
             </div>
             <div className='Home__Section-btn'>
               <button className='btn'>
-                <Link to='/about'>
+                <Link activeClassName='active-link' to='/about'>
                   <span className='btn-span'>about me</span>
                 </Link>
               </button>
               <button className='btn'>
-                <Link to='/projects'>
+                <Link activeClassName='active-link' to='/projects'>
                   <span className='btn-span'>projects</span>
                 </Link>
               </button>
               <button className='btn'>
-                <Link to='/skills'>
+                <Link activeClassName='active-link' to='/skills'>
                   <span className='btn-span'>skills</span>
                 </Link>
               </button>
