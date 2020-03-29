@@ -22,7 +22,7 @@ class Projects extends React.Component {
 
   render() {
     return (
-      <section className='Projects'>
+      <section className='Projects root'>
         <div className='Projects__Container'>
           <span className='Projects-bg'>projects</span>
           <div className='Projects__Content'>
