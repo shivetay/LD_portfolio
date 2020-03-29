@@ -4,6 +4,7 @@
 .Contact {
   &__Container {
     position: relative;
+
     @include respond(phone) {
       position: initial;
     }
