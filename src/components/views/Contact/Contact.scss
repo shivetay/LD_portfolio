@@ -2,6 +2,7 @@
 @import '../../../styles/mixins.scss';
 
 .Contact {
+  overflow: hidden;
   &__Container {
     position: relative;
 
