@@ -33,8 +33,8 @@ class Projects extends React.Component {
                 HTML, CSS/SASS, CSS Grid, RWD
               </span>
               <p className='Projects-descr'>
-                Small ladnign page, created with some basic HTML and CSS. This
-                page is fully responisve. Gallery was made with CSS Grid
+                Small ladnign page, created with some basic HTML, CSS and RWD.
+                Gallery was made with CSS Grid
               </p>
               <div className='Project-button'>
                 <button className='btn'>
@@ -67,7 +67,7 @@ class Projects extends React.Component {
                 <button className='btn'>
                   <a
                     className='btn-aTag'
-                    href='https://shivetay.github.io/protfolio_project_2'>
+                    href='https://shivetay.github.io/portfolio_project_2/'>
                     Demo
                   </a>
                 </button>
@@ -94,7 +94,7 @@ class Projects extends React.Component {
                 <button className='btn'>
                   <a
                     className='btn-aTag'
-                    href='https://shivetay.github.io/protfolio_project_3'>
+                    href='https://shivetay.github.io/portfolio_project_3/'>
                     Demo
                   </a>
                 </button>
