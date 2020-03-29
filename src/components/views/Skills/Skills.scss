@@ -3,7 +3,7 @@
 
 .Skills {
   &__Container {
-    position: relative;
+    // position: relative;
 
     @include respond(phone) {
       position: initial;
