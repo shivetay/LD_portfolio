@@ -10,9 +10,6 @@
     color: $color-font-contrast-second;
     opacity: 0.15;
 
-    @include respond(desktop-big) {
-      font-size: 48rem;
-    }
     @include respond(desktop) {
       font-size: 38rem;
     }

@@ -69,11 +69,13 @@ class Navigation extends Component {
                   onClick={() => this.clickItem(item.to)}
                   className={
                     item.clasName +
-                      ' ' +
-                      (item.to === activeLink ? 'active-link' : '') ||
-                    item.clasName +
-                      ' ' +
-                      (item.to === pathName ? 'active-link' : '')
+                    ' ' +
+                    (item.to === activeLink || item.to === pathName
+                      ? 'active-link'
+                      : '')
+                    // item.clasName +
+                    //   ' ' +
+                    //   (item.to === pathName ? 'active-link' : '')
                   }>
                   {item.name}
                 </span>

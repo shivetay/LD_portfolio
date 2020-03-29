@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 import MainLayout from './components/layout/MainLayout/MainLayout';
 import Home from './components/views/Home/Home';
@@ -13,14 +14,22 @@ function App() {
   return (
     <BrowserRouter>
       <MainLayout>
-        <Switch>
-          <Route exact path='/' component={Home} />
-          <Route exact path='/projects' component={Projects} />
-          {/* <Route exact path='/projects/:id' component={Project} /> */}
-          <Route exact path='/skills' component={Skills} />
-          <Route exact path='/about' component={About} />
-          <Route exact path='/contact' component={Contact} />
-        </Switch>
+        <Route
+          render={({ location }) => (
+            <TransitionGroup>
+              <CSSTransition key={location.key} timeout={450} classNames='fade'>
+                <Switch location={location}>
+                  <Route exact path='/' component={Home} />
+                  <Route path='/projects' component={Projects} />
+                  {/* <Route exact path='/projects/:id' component={Project} /> */}
+                  <Route path='/skills' component={Skills} />
+                  <Route path='/about' component={About} />
+                  <Route path='/contact' component={Contact} />
+                </Switch>
+              </CSSTransition>
+            </TransitionGroup>
+          )}
+        />
       </MainLayout>
     </BrowserRouter>
   );

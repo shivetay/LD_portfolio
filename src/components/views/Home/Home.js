@@ -6,7 +6,7 @@ import './Home.scss';
 class Home extends Component {
   render() {
     return (
-      <section className='Home'>
+      <section className='Home root'>
         <div className='Home__Header'>
           <span className='Home__Header-bg'>hello</span>
           <div className='Home__Section'>
