@@ -38,7 +38,7 @@
 
   &__Content {
     position: absolute;
-    top: 60%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 99;
@@ -47,20 +47,20 @@
     line-height: 1.4;
 
     @include respond(desktop) {
-      top: 60%;
+      top: 50%;
     }
     @include respond(desktop-small) {
-      top: 60%;
+      top: 50%;
     }
-    @include respond(tab-port) {
-      top: 70%;
-    }
-    @include respond(phone) {
-      top: 45%;
-    }
-    @include respond(xsmall) {
-      top: 45%;
-    }
+    // @include respond(tab-port) {
+    //   top: 40%;
+    // }
+    // @include respond(phone) {
+    //   top: 40%;
+    // }
+    // @include respond(xsmall) {
+    //   top: 40%;
+    // }
     &-img {
       margin: 6rem 0;
       padding: 1rem;

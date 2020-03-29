@@ -22,7 +22,7 @@ import { faDatabase, faRunning } from '@fortawesome/free-solid-svg-icons';
 
 const Skills = () => {
   return (
-    <section className='Skills root'>
+    <section className='Skills'>
       <div className='Skills__Container'>
         <span className='Skills-bg'>skills</span>
         <div className='Skills__Content grid'>

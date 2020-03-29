@@ -12,7 +12,7 @@ import {
 
 const Contact = () => {
   return (
-    <section className='Contact root'>
+    <section className='Contact'>
       <div className='Contact__Container'>
         <span className='Contact-bg'>contact</span>
         <div className='Contact__Content'>
