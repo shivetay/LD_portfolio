@@ -47,15 +47,18 @@
     // @include respond(desktop-small) {
     //   top: 60%;
     // }
-    // @include respond(tab-port) {
-    //   top: 60%;
-    // }
+    @include respond(tab-port) {
+      top: 60%;
+      font-size: $font-small;
+    }
 
     @include respond(phone) {
-      top: 45%;
+      top: 60%;
+      font-size: $font-small;
     }
     @include respond(xsmall) {
-      top: 45%;
+      top: 60%;
+      font-size: $font-small;
     }
 
     &-front {

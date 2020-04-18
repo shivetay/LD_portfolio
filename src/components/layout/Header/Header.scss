@@ -13,15 +13,30 @@
     margin: 0 2rem;
     &-h3 {
       text-transform: lowercase;
+      @include respond(tab-port) {
+        font-size: $font-medium;
+      }
+      @include respond(phone) {
+        font-size: $font-medium;
+      }
+      @include respond(xsmall) {
+        font-size: $font-medium;
+      }
     }
     &-paragraph {
       align-self: flex-end;
       color: $color-font-contrast;
+
+      @include respond(tab-port) {
+        font-size: $font-small;
+      }
       @include respond(phone) {
         align-self: flex-start;
+        font-size: $font-small;
       }
       @include respond(xsmall) {
         align-self: flex-start;
+        font-size: $font-small;
       }
     }
   }
