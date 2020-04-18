@@ -41,15 +41,15 @@
     z-index: 99;
     text-transform: lowercase;
 
-    @include respond(desktop) {
-      top: 80%;
-    }
-    @include respond(desktop-small) {
-      top: 80%;
-    }
-    @include respond(tab-port) {
-      top: 80%;
-    }
+    // @include respond(desktop) {
+    //   top: 60%;
+    // }
+    // @include respond(desktop-small) {
+    //   top: 60%;
+    // }
+    // @include respond(tab-port) {
+    //   top: 60%;
+    // }
 
     @include respond(phone) {
       top: 45%;

@@ -96,13 +96,13 @@ const Skills = () => {
             <FontAwesomeIcon className='Skills-icon' icon={faWindows} />
             <span className='Skills-span'>Windows</span>
           </div>
-          <div className='Skills__Content-learn'>
+          {/* <div className='Skills__Content-learn'>
             <h3>Learning</h3>
           </div>
           <p className='Skills__Content-text'>
             Right now I am polishing my skills. Working hard with Front-End and
             Back-End .
-          </p>
+          </p> */}
         </div>
       </div>
     </section>

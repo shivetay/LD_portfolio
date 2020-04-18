@@ -47,20 +47,20 @@
     line-height: 1.4;
 
     @include respond(desktop) {
-      top: 50%;
+      top: 60%;
     }
     @include respond(desktop-small) {
+      top: 60%;
+    }
+    @include respond(tab-port) {
+      top: 70%;
+    }
+    @include respond(phone) {
+      top: 40%;
+    }
+    @include respond(xsmall) {
       top: 50%;
     }
-    // @include respond(tab-port) {
-    //   top: 40%;
-    // }
-    // @include respond(phone) {
-    //   top: 40%;
-    // }
-    // @include respond(xsmall) {
-    //   top: 40%;
-    // }
     &-img {
       height: 20rem;
       margin: 6rem 0;
