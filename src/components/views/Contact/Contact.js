@@ -55,7 +55,7 @@ const Contact = () => {
               <a
                 target='_blank'
                 rel='noopener noreferrer'
-                href='https://1drv.ms/b/s!AmWwIHoCT8_JkFtau5aJrAbGM-hi?e=ZTyWtL'>
+                href='https://1drv.ms/b/s!AmWwIHoCT8_JkHe7SAb-QM20yAMg?e=ENtSsH'>
                 CV
               </a>
               <FontAwesomeIcon icon={faFilePdf} />
